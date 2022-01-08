@@ -1,8 +1,9 @@
 {
   "name": "webm-duration-fix",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "based on ts-ebml and support large file(than 2GB) and optimize memory usage during repair",
   "main": "webm-duration-fix.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/buynao/webm-duration-fix.git"
