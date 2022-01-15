@@ -43,3 +43,7 @@ mediaRecorder.onstop = async () => {
     blobSlice = [];
 };
 ```
+
+## features
+- Compatible with node & browsers
+- Fix oversized files with low memory usage
