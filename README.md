@@ -14,7 +14,7 @@ Here is the community discussion [Issue 642012](https://bugs.chromium.org/p/chro
 
 [Browser Demo](https://github.com/buynao/mediaRecorder-demo)
 
-[Electron Demo](https://github.com/buynao/electron-recorder-app)
+[Electron/NodeJs Demo](https://github.com/buynao/electron-recorder-app)
 
 ## Install
 
