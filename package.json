@@ -1,6 +1,6 @@
 {
   "name": "webm-duration-fix",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "based on ts-ebml and support large file(than 2GB) and optimize memory usage during repair",
   "scripts": {
     "init": "npm run update; npm run mkdir; npm run build",
@@ -18,11 +18,11 @@
     "url": "git+https://github.com/buynao/webm-duration-fix.git"
   },
   "keywords": [
-    "typescript",
+    "webm",
     "fix-webm",
     "webm-duration",
     "MediaRecorder",
-    "webm",
+    "reacordRtc",
     "ebml"
   ],
   "author": "buynao",

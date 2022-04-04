@@ -1,3 +1,5 @@
+// source: https://www.matroska.org/technical/elements.html
+
 export const byEbmlID = {
 	0x80: {
 		name: "ChapterDisplay",
@@ -2044,5 +2046,45 @@ export const byEbmlID = {
 		multiple: true,
 		minver: 1,
 		description: "Set the EBML characteristics of the data to follow. Each EBML document has to start with this."
-	}
+	},
+	0x55b0: {
+		name: "Colour",
+		level: "4",
+		type: "m",
+		mandatory: true,
+		multiple: true,
+		description: "Settings describing the colour format."
+	},
+	0x55b1: {
+		name: "MatrixCoefficients",
+		level: "5",
+		type: "u",
+		mandatory: true,
+		multiple: true,
+		description: "The Matrix Coefficients of the video used to derive luma and chroma values from red, green, and blue color primaries. For clarity, the value and meanings for MatrixCoefficients are adopted from Table 4 of ISO/IEC 23001-8:2016 or ITU-T H.273."
+	},
+	0x55b9: {
+		name: "Range",
+		level: "5",
+		type: "u",
+		mandatory: true,
+		multiple: true,
+		description: "Clipping of the color ranges."
+	},
+	0x55ba: {
+		name: "TransferCharacteristics",
+		level: "5",
+		type: "u",
+		mandatory: true,
+		multiple: true,
+		description: "The transfer characteristics of the video."
+	},
+	0x55bb: {
+		name: "Primaries",
+		level: "5",
+		type: "u",
+		mandatory: true,
+		multiple: true,
+		description: "The colour primaries of the video. For clarity, the value and meanings for Primaries are adopted from Table 2 of ISO/IEC 23091-4 or ITU-T H.273."
+	},
 };

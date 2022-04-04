@@ -22,12 +22,15 @@ export default async function fixWebmDuration(blob: Blob): Promise<Blob> {
       reader.stop();
       break;
     }
-    decoder.decode(value).forEach(elm => {
+    let elms = decoder.decode(value);
+    // As browser upgrade webm meta attributes are gradually added,  
+    // so filter unknown type to bypass this issue.
+    elms = elms?.filter(elm => elm.type !== 'unknown')
+    elms.forEach(elm => {
       reader.read(elm)
     });
     value = null;
   }
-  
   const refinedMetadataBuf = tools.makeMetadataSeekable(reader.metadatas, reader.duration, reader.cues);
   const refinedMetadataBlob = new Blob([refinedMetadataBuf], { type: blob.type });
   const firstPartBlobWithoutMetadata = blob.slice(reader.metadataSize);
