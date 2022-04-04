@@ -13,13 +13,13 @@ export declare type EBMLElementDetail = (MasterElement | (ChildElementsValue & {
 })) & ElementDetail;
 export interface IElement {
     name: string;
-    type: "m" | "u" | "i" | "f" | "s" | "8" | "b" | "d";
+    type: "m" | "u" | "i" | "f" | "s" | "8" | "b" | "d" | "unknown";
 }
 export interface ChildElement extends IElement {
-    type: "u" | "i" | "f" | "s" | "8" | "b" | "d";
+    type: "u" | "i" | "f" | "s" | "8" | "b" | "d" | "unknown";
 }
 export interface MasterElement extends IElement {
-    type: "m";
+    type: "m" | "unknown";
     isEnd: boolean;
     unknownSize?: boolean;
 }

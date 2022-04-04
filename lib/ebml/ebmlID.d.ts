@@ -2038,4 +2038,44 @@ export declare const byEbmlID: {
         minver: number;
         description: string;
     };
+    21936: {
+        name: string;
+        level: string;
+        type: string;
+        mandatory: boolean;
+        multiple: boolean;
+        description: string;
+    };
+    21937: {
+        name: string;
+        level: string;
+        type: string;
+        mandatory: boolean;
+        multiple: boolean;
+        description: string;
+    };
+    21945: {
+        name: string;
+        level: string;
+        type: string;
+        mandatory: boolean;
+        multiple: boolean;
+        description: string;
+    };
+    21946: {
+        name: string;
+        level: string;
+        type: string;
+        mandatory: boolean;
+        multiple: boolean;
+        description: string;
+    };
+    21947: {
+        name: string;
+        level: string;
+        type: string;
+        mandatory: boolean;
+        multiple: boolean;
+        description: string;
+    };
 };
